@@ -117,6 +117,30 @@ body {
   }
 }
 
+.countdown{
+  display: flex;
+  justify-content: space-around;
+}
+
+.time{
+  text-align: center;
+  margin: 0.5em;
+  font-family: sans-serif;
+}
+
+.time span{
+  font-size: 2.5em;
+  display: block;
+  font-family: sans-serif;
+}
+
+.smalltext{
+  padding-top: 0.5em;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+
 /* Wedding Event Style */
 .ww-wedding-event ul {
   list-style: none;
@@ -162,8 +186,9 @@ body {
 
 /* RSVP Style */
 .ww-rsvp-detail {
-  background: url("../images/rsvp-img.jpg") no-repeat center center;
+  background:  no-repeat center center;
   background-size: cover;
+  background-color: #fad6f7;
   min-height: 500px;
   position: relative; }
   .ww-rsvp-detail .ww-rsvp-form {
@@ -177,9 +202,9 @@ body {
     .ww-rsvp-detail .ww-rsvp-form .form-control {
       background-color: rgba(222, 222, 222, 0.2);
       color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.6); }
+      border: 5px solid rgba(255, 255, 255, 0.6); }
     .ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
-      color: #dedede; }
+      color: #4b1a1a;}
     .ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
       color: #dedede; }
     .ww-rsvp-detail .ww-rsvp-form .form-control::placeholder {
