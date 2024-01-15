@@ -83,19 +83,19 @@
       <div class="countdown">
         <div class="time">
             <span class="days"></span>
-            <div class="smalltext">Days</div>
+            <div class="smalltext">Tage</div>
         </div>
         <div class="time">
             <span class="hours"></span>
-            <div class="smalltext">Hours</div>
+            <div class="smalltext">Stunden</div>
         </div>
         <div class="time">
             <span class="minutes"></span>
-            <div class="smalltext">Minutes</div>
+            <div class="smalltext">Minuten</div>
         </div>
         <div class="time">
             <span class="seconds"></span>
-            <div class="smalltext">Seconds</div>
+            <div class="smalltext">Sekunden</div>
         </div>
     </div>
     </div>
@@ -163,56 +163,83 @@
   </div>
 </div>
 <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
+  <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">RSVP</h2>
   <form method="post" action="https://script.google.com/macros/s/AKfycbybV8LOA_atr_I_X21JaVKNMc1Wq9ZXaPD1XDrCDwGau1z7JTeQESuF5kTocnX7sZPl/exec" name="wedding-form">
-    <div class="row">
-        <div class="col md-6 pb-3">
+    <div class="row align-items-center">
+        <div class="col">
             <div class="form-group">
-                <label for="name-input">Deine Name(n)</label>
+                <label for="name-input">Eure Name(n)</label>
                 <input class="form-control" id="name-input" type="text" name="name-input"
                         required="required" />
             </div>
         </div>
-        <div class="col-md-6 pb-3">
+    </div>
+      <div class="row">
+        <div class="col">
             <div class="form-group">
                 <label for="email-input">Deine Email Adresse</label>
-                <input class="form-control" id="email-input" type="email-input"
+                <input class="form-control" id="email-input" type="text" name="email-input"
                         name="email" required="required" />
             </div>
         </div>
-    </div>
+      </div>
     <div class="row">
-        <div class="col-md-6 pb-3">
+        <div class="col">
             <div class="form-group">
                 <label for="partner-input">Mit Partner (ja/nein)</label>
-                <input class="form-control" id="partner-input" type="text" name="partner-input"
-                        required="required" />
+                <select name="partner-input" id="partner-input">
+                  <option value="">--Wähle eine Option aus--</option>
+                  <option value="ja">Ja</option>
+                  <option value="nein">Nein</option>
+                </select>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 pb-3">
+        <div class="col">
             <div class="form-group">
-                <label for="meal-input">Essen (vegan, vegetarisch, Sontiges)</label>
-                <input class="form-control" id="meal-input" type="text" name="meal-input" >
+                <label for="meal-input">Essen (Allergien bitte unten im Textfeld uns mitteilen)</label>
+                <select name="meal-input" id="meal-input">
+                  <option value="">--Wähle eine Option aus--</option>
+                  <option value="vegetarisch">vegetarisch</option>
+                  <option value="vegan">vegan</option>
+                  <option value="esse alles">Esse alles</option>
+                </select>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 pb-3">
+        <div class="col">
             <div class="form-group">
-                <label for="sleeping-input">Schlafplatz (Jugendherberge/Hotel)</label>
-                <input class="form-control" id="sleeping-input" type="text" name="sleeping-input"  >
+                <label for="sleeping-input">Schlafplatz benötigt (Mehrbettzimmer Jugendherberge)</label>
+                <select name="sleeping-input" id="sleeping-input">
+                  <option value="">--Wähle eine Option aus--</option>
+                  <option value="ja">Ja</option>
+                  <option value="nein">Nein</option>
+                </select>
             </div>
         </div>
     </div>
     <div class="row">
-      <div class="col-md-6 pb-3">
+      <div class="col">
           <div class="form-group">
-              <label for="transport-input">Mitfahrgelegenheit Standesamt zur Location (Habe Platz/Benötige einen Platz)</label>
-              <input class="form-control" id="transport-input" type="text" name="transport">
+            <label for="form-select">Mitfahrgelegenheit Standesamt zur Location</label>
+            <select name="transport-input" id="transport-input">
+              <option value="">--Wähle eine Option aus--</option>
+              <option value="Habe Platz und kann weitere Mitnehmen">Habe Platz und kann weitere Mitnehmen</option>
+              <option value="Benötige einen Platz">Benötige einen Platz</option>
+            </select>
           </div>
       </div>
-  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+          <div class="form-group">
+              <label for="Sonstiges">Willst du uns noch was mitteilen?</label>
+              <textarea class="form-control" id="sonstiges-input" type="text" name="sonstiges-input"></textarea>
+          </div>
+      </div>
+    </div>
     <div class="row">
     <div class="col text-center">
             <button class="btn btn-primary btn-submit" type="submit">Send</button>
