@@ -119,7 +119,7 @@ body {
 
 .countdown{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .time{
@@ -317,7 +317,7 @@ body {
     padding: 40px;
 }
 
-input{
+input, textarea{
   width: 100%;
   background: #f0edde;
   border: #4b3b35 solid 2px;
