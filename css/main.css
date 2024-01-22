@@ -310,14 +310,14 @@ body {
   form {
     border: 0px solid black;
     width: 90%;
-    background-color: #f0edde;
+    background-color: #faedff;
     margin: auto;
     padding: 40px;
 }
 
 input, textarea{
   width: 100%;
-  background: #f0edde;
+  background: #f1cfff;
   border: #4b3b35 solid 2px;
   border-radius: .5em;
   resize: none;
