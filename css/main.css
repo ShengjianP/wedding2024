@@ -119,25 +119,26 @@ body {
 
 .countdown{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  font-family: "Dosis", sans-serif; 
 }
 
 .time{
   text-align: center;
   margin: 0.5em;
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif; 
 }
 
 .time span{
   font-size: 2.5em;
   display: block;
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif; 
 }
 
 .smalltext{
   padding-top: 0.5em;
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif; 
 }
 
 
@@ -186,11 +187,12 @@ body {
 
 /* RSVP Style */
 .ww-rsvp-detail {
-  background:  no-repeat center center;
+  background: center center;
   background-size: cover;
-  background-color: lightcyan;
+  background-color: rgba(248,249,250,255);
   min-height: 500px;
   position: relative; 
+  color: black;
   }
   .ww-rsvp-detail .ww-rsvp-form {
     padding-left: 5%; }
@@ -201,26 +203,22 @@ body {
       .ww-rsvp-detail .ww-rsvp-form {
         padding-left: 0%; } }
     .ww-rsvp-detail .ww-rsvp-form .form-control {
-      background-color: rgba(158, 68, 68, 0.2);
-      color: #fff;
+      color: black;
       border: 5px solid rgba(255, 255, 255, 0.6); }
     .ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
       color: #4b1a1a;}
     .ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
-      color: #dedede; }
+      color: black; }
     .ww-rsvp-detail .ww-rsvp-form .form-control::placeholder {
-      color: #dedede; }
+      color: black; }
     .ww-rsvp-detail .ww-rsvp-form select.form-control option {
-      background: rgba(0, 0, 0, 0.3);
-      color: #fff; }
+      color: black; }
     .ww-rsvp-detail .ww-rsvp-form .btn-submit {
-      background-color: rgba(245, 138, 119, 0.8);
       padding: 0.45rem 5.5rem;
       border: 1; }
 
 .ww-rsvp-detail:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -312,7 +310,7 @@ body {
   form {
     border: 0px solid black;
     width: 90%;
-    background-color: lightblue;
+    background-color: #f0edde;
     margin: auto;
     padding: 40px;
 }
@@ -340,19 +338,20 @@ textarea {
   font-family: 'Open Sans', arial, sans-serif;
 }
 
-.h_iframe iframe {
-  position:absolute;
-  background-size: cover;
-  top:0;
-  left:0;
+iframe {
   width:100%;
   height:100%;
+}
+iframe {
+  height: 100%;
+  width:100%;
 }
 
 .faq
 {
-  max-width: 1600px;
+  width: auto;
   font-family: sans-serif;
+  padding-left: 10%;
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
@@ -378,6 +377,7 @@ textarea {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
+  
 }
 
 .answer p
@@ -385,9 +385,20 @@ textarea {
   padding-top: 1rem;
   line-height: 1.6;
   font-size: 1rem;
+  color: lightblue;
+  font-weight: bold;
 }
 
 .faq.active .answer
 {
   max-height: 300px;
+}
+
+.h_iframe iframe {
+  width:100%;
+  height:100%;
+}
+.h_iframe {
+  height: 100%;
+  width:100%;
 }
